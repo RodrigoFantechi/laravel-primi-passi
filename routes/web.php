@@ -17,9 +17,21 @@ Route::get('/', function () {
 
     return view('home',
     
-    $data = [
+    [
         'title' => 'Hello World',
 
     ]
 );
 })->name('home');
+
+
+Route::get('about', function () {
+
+    return view('about',
+    
+    [
+        'title' => 'Welcome to About',
+
+    ]
+);
+})->name('about');
