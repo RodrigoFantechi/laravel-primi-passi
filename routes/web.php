@@ -15,23 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    return view('home',
-    
-    [
+    $data = [
         'title' => 'Hello World',
+    ];
 
-    ]
-);
+    return view('home', $data);
 })->name('home');
 
 
 Route::get('about', function () {
 
-    return view('about',
-    
-    [
+    $data = [
         'title' => 'Welcome to About',
+    ];
 
-    ]
-);
+    return view('home', $data);
+
 })->name('about');
