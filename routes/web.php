@@ -23,12 +23,8 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('about', function () {
-
-    $data = [
-        'title' => 'Welcome to About',
-    ];
-
-    return view('home', $data);
+Route::get('about-me', function () {
+        $title = 'Welcome to About';
+    return view('about', compact('title'));
 
 })->name('about');
